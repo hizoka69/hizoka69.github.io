@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta Secreta by Hizoka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="passwordScreen" class="screen password-screen active">
+  <h2>🔒 Enter password</h2>
+  <div class="input-display" id="inputDisplay">••••</div>
+  <div class="keypad">
+    <button class="key" onclick="enterDigit('1')">1</button>
+    <button class="key" onclick="enterDigit('2')">2</button>
+    <button class="key" onclick="enterDigit('3')">3</button>
+    <button class="key" onclick="enterDigit('4')">4</button>
+    <button class="key" onclick="enterDigit('5')">5</button>
+    <button class="key" onclick="enterDigit('6')">6</button>
+    <button class="key" onclick="enterDigit('7')">7</button>
+    <button class="key" onclick="enterDigit('8')">8</button>
+    <button class="key" onclick="enterDigit('9')">9</button>
+    <button class="key" onclick="deleteDigit()">←</button>
+    <button class="key" onclick="enterDigit('0')">0</button>
+  </div>
+</div>
+
+<div id="notepadScreen" class="screen">
+  <div class="notepad">
+
+    <div class="notepad-content">
+      <h3>📅 20 Julio 2025 </h3>
+      <h4>Para Creador </h4>
+      <p>
+      Ojalá que hayas podido descifrar la contraseña. Si no lo has logrado, no te preocupes,
+      no es tan importante. Lo que realmente quiero que sepas es cuánto significas para mí
+      aunque no lo diga muy seguido.
+      Gracias a ti papá soy quien soy actualmente y eres una de las razones por las que sigo adelante
+      porque te veo y me da inspiración para seguir luchando por mis sueños.
+      </p>
+      A veces te veo cansado y estresado, pero siempre encuentras la manera de seguir adelante, eres mi figura a seguir.
+      Yo siempre digo que tú eres mi héroe jajajaja, porque siempre has estado ahí para mí.
+      Gracias por ser un padre tan maravilloso, por enseñarme a ser fuerte, valiente y a nunca rendirme.
+      <p>
+      Te amo mucho, tu hijo Joaquín.
+      </p>
+      <img src="foto4.png" alt="Foto de recuerdo 3" class="notepad-image">
+    </div>
+
+    <div class="notepad-image-column">
+      <img src="foto1.png" alt="Foto de recuerdo 1" class="notepad-image">
+      <img src="foto2.png" alt="Foto de recuerdo 2" class="notepad-image">
+      <img src="fot3.png" alt="Foto de recuerdo 3" class="notepad-image">
+      <img src="foto5.png" alt="Foto de recuerdo 3" class="notepad-image">
+      </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

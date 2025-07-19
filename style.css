@@ -1,0 +1,129 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #6cd3a3;
+}
+
+.screen {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 10px;
+}
+
+.active {
+  display: flex;
+}
+
+.password-screen {
+  flex-direction: column;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.key {
+  background-color: #f5f3f3;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.key:hover {
+  background-color: #11964f;
+  color: white;
+}
+
+.input-display {
+  font-size: 24px;
+  margin-top: 20px;
+  letter-spacing: 8px;
+}
+
+/* Estilos para el notepad y la imagen */
+.notepad {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 90%;
+  max-width: 800px;
+  background-color: #fff0f6;
+  border: 3px solid #f8bbd0;
+  padding: 25px;
+  border-radius: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+.notepad-content {
+  flex: 1;
+  text-align: left;
+}
+
+
+
+.notepad-image-column {
+  display: flex;
+  flex-direction: column; /* Apila las imágenes verticalmente */
+  gap: 15px; /* Espacio entre cada foto */
+  max-width: 250px; /* Ancho de la columna de fotos */
+}
+
+/* Estilo para CADA imagen individual */
+.notepad-image {
+  width: 100%; /* Hace que cada imagen ocupe todo el ancho de la columna */
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #f8bbd0;
+  display: block; /* Asegura que se comporte bien dentro del contenedor flex */
+}
+
+.notepad h3 {
+  margin-top: 0;
+}
+
+
+
+/* ======================================= */
+/* ESTILOS PARA MÓVILES             */
+/* ======================================= */
+
+@media (max-width: 768px) {
+
+  .screen {
+    /* Permite hacer scroll en la pantalla de la nota si el contenido es muy largo */
+    height: auto;
+    min-height: 100vh;
+    padding: 15px;
+  }
+
+  .notepad {
+    /* Cambia la dirección de los elementos: de fila (lado a lado) a columna (uno encima de otro) */
+    flex-direction: column;
+    width: 100%;
+    gap: 25px; /* Aumenta el espacio entre el texto y las fotos */
+  }
+
+  .notepad-image-column {
+    /* Permite que la columna de imágenes ocupe todo el ancho disponible */
+    max-width: 100%; 
+    align-items: center; /* Centra las fotos */
+  }
+
+  .notepad-image {
+    /* Define un ancho máximo para las fotos en móvil para que no sean demasiado grandes */
+    max-width: 280px;
+  }
+}
